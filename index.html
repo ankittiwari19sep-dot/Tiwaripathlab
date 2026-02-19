@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>तिवारी पाथ लैब | 28 वर्षों का अटूट विश्वास</title>
+    <style>
+        /* CSS: डिजाइन और लेआउट */
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f4f7f9; }
+        
+        /* हेडर */
+        header { background-color: #001f3f; color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #d4af37; position: sticky; top: 0; z-index: 1000; }
+        .logo img { height: 60px; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        
+        /* हीरो सेक्शन */
+        .hero { background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('lab-bg.jpg'); background-size: cover; background-position: center; height: 60vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white; }
+        .hero h1 { font-size: 2.5em; color: #d4af37; margin: 0; }
+        
+        .section-title { text-align: center; color: #001f3f; margin-top: 50px; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: #d4af37; margin: 10px auto; }
+
+        /* लीडरशिप */
+        .leader-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 40px; }
+        .leader-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; width: 280px; transition: 0.3s; }
+        .leader-card:hover { transform: translateY(-10px); }
+        .leader-card img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #d4af37; object-fit: cover; margin-bottom: 15px; }
+
+        /* बुकिंग फॉर्म */
+        .booking-section { padding: 40px 20px; background-color: #fff; }
+        .booking-container { max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fcfaf3; border: 1px solid #d4af37; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #001f3f; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+
+        /* टेस्ट मेनू */
+        .test-category-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px; }
+        .test-box { background: white; width: 280px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-top: 5px solid #d4af37; overflow: hidden; }
+        .category-header { background: #001f3f; color: white; padding: 10px; text-align: center; font-weight: bold; }
+        .test-list { list-style: none; padding: 15px; margin: 0; font-size: 0.9em; }
+        .test-list li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .test-list li::before { content: "✓ "; color: #d4af37; font-weight: bold; }
+
+        /* फुटर */
+        footer { background: #001f3f; color: white; padding: 40px 20px; text-align: center; border-top: 5px solid #d4af37; }
+        .btn { display: inline-block; padding: 12px 25px; background: #d4af37; color: #001f3f; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; font-size: 1em; }
+        .btn:hover { background: #b8962d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="1000634851.jpg" alt="तिवारी पाथ लैब लोगो"></div>
+        <nav>
+            <a href="#home">होम</a>
+            <a href="#tests">टेस्ट</a>
+            <a href="#book">बुकिंग</a>
+        </nav>
+        <div>📞 7742089666</div>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>28 वर्षों का अटूट विश्वास</h1>
+            <p>आधुनिक तकनीक और विशेषज्ञों की देखरेख में आपकी सेहत का ख्याल।</p>
+            <br>
+            <a href="#book" class="btn">अभी टेस्ट बुक करें</a>
+        </div>
+    </section>
+
+    <h2 class="section-title">हमारा नेतृत्व</h2>
+    <div class="leader-container">
+        <div class="leader-card">
+            <img src="1000634832.jpg" alt="धर्मेंद्र तिवारी">
+            <h3>धर्मेंद्र तिवारी</h3>
+            <p>संस्थापक | 30 साल का अनुभव</p>
+        </div>
+        <div class="leader-card">
+            <img src="1000634836.jpg" alt="अंकित तिवारी">
+            <h3>अंकित तिवारी</h3>
+            <p>CEO | BSc Radiology, MBA</p>
+        </div>
+    </div>
+
+    <section class="booking-section" id="book">
+        <h2 class="section-title">अपॉइंटमेंट लें</h2>
+        <div class="booking-container">
+            <form action="https://wa.me/917742089666" method="get" target="_blank">
+                <div class="form-group">
+                    <label>मरीज का नाम</label>
+                    <input type="text" name="text" placeholder="अपना नाम लिखें" required>
+                </div>
+                <div class="form-group">
+                    <label>फोन नंबर</label>
+                    <input type="tel" placeholder="अपना मोबाइल नंबर" required>
+                </div>
+                <div class="form-group">
+                    <label>टेस्ट चुनें</label>
+                    <select name="text">
+                        <option value="CBC Test Booking">CBC (Complete Blood Count)</option>
+                        <option value="Thyroid Profile Booking">Thyroid Profile</option>
+                        <option value="Lipid Profile Booking">Lipid Profile</option>
+                        <option value="Sugar Test Booking">Blood Sugar</option>
+                        <option value="Full Body Checkup Booking">Full Body Checkup</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">WhatsApp पर भेजें 💬</button>
+            </form>
+        </div>
+    </section>
+
+    <h2 class="section-title" id="tests">हमारे मुख्य टेस्ट</h2>
+    <div class="test-category-container">
+        <div class="test-box">
+            <div class="category-header">🩸 हिमेटोलॉजी</div>
+            <ul class="test-list">
+                <li>CBC / ESR</li>
+                <li>Peripheral Smear</li>
+                <li>Blood Grouping</li>
+                <li>PT/INR</li>
+            </ul>
+        </div>
+        <div class="test-box">
+            <div class="category-header">🧪 बायोकेमिस्ट्री</div>
+            <ul class="test-list">
+                <li>Liver Function (LFT)</li>
+                <li>Kidney Function (KFT)</li>
+                <li>Lipid Profile</li>
+                <li>HbA1c / Sugar</li>
+            </ul>
+        </div>
+        <div class="test-box">
+            <div class="category-header">🧠 हार्मोन / अन्य</div>
+            <ul class="test-list">
+                <li>Thyroid (T3, T4, TSH)</li>
+                <li>Vitamin D & B12</li>
+                <li>Urine Routine</li>
+                <li>Semen Analysis</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>📍 कोटा, राजस्थान | 📞 7742089666</p>
+        <p>28 वर्षों से आपकी सेवा में समर्पित - तिवारी पाथ लैब</p>
+        <p>&copy; 2026 सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+</body>
+</html>
